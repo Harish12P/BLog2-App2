@@ -1,0 +1,10 @@
+//site name is flowbite:npm i flowbite-react
+//2: 'node_modules/flowbite-react/lib/esm/**/*.js',
+//flowbite like a boostrap library
+
+//************bacckend(*****************)
+//npm init -y
+//npm i express
+
+//*******Redux */
+//use with redux presist
