@@ -52,7 +52,7 @@ export const signin = async (req, res, next) => {
     }
     const validPassword = bcryptjs.compareSync(password, validUser.password); //yha pe async compare karega password ko ki vaha valid hai ki nahi
     if (!validPassword) {
-      return next(errorHandler(404, "Invalid password"));
+      return next(errorHandler(400, "Invalid password"));
     }
     const token = jwt.sign(
       { id: validUser._id, isAdmin: validUser.isAdmin },
